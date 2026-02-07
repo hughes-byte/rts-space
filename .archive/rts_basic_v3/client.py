@@ -1,3 +1,4 @@
+# v3
 import socket
 import threading
 import math
@@ -338,7 +339,8 @@ def main():
     centered_once = False
 
     while running:
-        dt = clock.tick(60) / 1000.0
+        RENDER_HZ = 120
+        dt = clock.tick(RENDER_HZ) / 1000.0
         update_camera(dt)
 
         mouse_screen = pygame.Vector2(pygame.mouse.get_pos())

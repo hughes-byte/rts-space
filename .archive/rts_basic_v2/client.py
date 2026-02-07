@@ -1,3 +1,4 @@
+# v2
 import socket
 import threading
 import pygame
@@ -99,7 +100,7 @@ def main():
 
     running = True
     while running:
-        dt = clock.tick(60) / 1000.0
+        dt = clock.tick(120) / 1000.0
 
         for e in pygame.event.get():
             if e.type == pygame.QUIT:

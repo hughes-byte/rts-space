@@ -2,7 +2,7 @@ import json
 import socket
 import struct
 
-MAX_MSG_BYTES = 2_000_000  # sanity limit (2MB)
+MAX_MSG_BYTES = 2_000_000  # sanity cap
 
 def send_msg(sock: socket.socket, obj: dict) -> None:
     payload = json.dumps(obj, separators=(",", ":")).encode("utf-8")

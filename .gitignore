@@ -1,2 +1,22 @@
+# Python virtual environments
 .venv/
+venv/
+env/
+
+# Python cache
 __pycache__/
+
+# Environment variables
+.env
+
+# Byte-compiled / optimized files
+*.py[cod]
+
+# Distribution / build artifacts
+build/
+dist/
+*.egg-info/
+
+# Tooling
+.pytest_cache/
+.mypy_cache/

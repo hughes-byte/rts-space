@@ -1,3 +1,4 @@
+# v3
 import socket
 import threading
 import queue
@@ -15,9 +16,9 @@ PORT = 5001
 # =========================
 # Timing
 # =========================
-TICK_HZ = 60.0
+TICK_HZ = 30.0
 DT = 1.0 / TICK_HZ
-SNAPSHOT_HZ = 30.0
+SNAPSHOT_HZ = 20.0
 SNAP_EVERY_TICKS = max(1, int(TICK_HZ / SNAPSHOT_HZ))
 
 # =========================

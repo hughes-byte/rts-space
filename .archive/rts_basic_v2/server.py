@@ -1,3 +1,4 @@
+# v2
 import socket
 import threading
 import queue
@@ -12,9 +13,9 @@ HOST = "0.0.0.0"
 PORT = 5001
 
 # --- simulation rates ---
-TICK_HZ = 120.0
+TICK_HZ = 30.0
 DT = 1.0 / TICK_HZ
-SNAPSHOT_HZ = 60.0
+SNAPSHOT_HZ = 20.0
 SNAP_EVERY_TICKS = max(1, int(TICK_HZ / SNAPSHOT_HZ))
 
 # --- world size (just for reference; clients can ignore) ---
